@@ -8,7 +8,19 @@ The project uses the Databricks methodology of referencing system inputs as bron
 
 The templates use an architecture designed to be self service, data driven, event-driven, loosely coupled, multi-vendor and multi-tenant. The process of creating new ETL processes or reports is self-service and does not require knowledge of procedural programming such as Python. Definitions of the architectural patterns for self-service, data driven, event-driven, loosely coupled, and multi-tenant are provided in the project description.
 
-![Delta-Lake-Multi-Hop-Architecture-Bronze](https://user-images.githubusercontent.com/2504540/147579076-395a7f22-fff7-490e-9cf8-847a2adfbd95.png)
+![Delta-Lake-Multi-Hop-Architecture-Bronze](templates/../_templates/docs/images/bronze_to_gold_overview.png)
+
+## GIFT Data, Analytics and Visualization Use Roles and Use Cases
+
+The feature list may seem overwhelming.  The following chart highlights the use cases that are applicable to the different roles.  An individual where may multiple hats and perform different roles.  All items in green can be performed with no procedural programming and are designe for self-service BI in the delta lake storefront.  Items in the red part of the flow are designed to be performed in the delta lake developer kitchen by trained IT professionals.
+
+![User Roles and Use Cases](templates/../_templates/docs/images/user_roles_and_use_cases.png)
+
+The self service lists are maintained by updating data stored in lists that are maintained in SharePoint, Google Sheets or a similar tool that synchs the data with csv files stored in Azure Storage upon update.
+
+A example of the menu for list maintenance is below.
+
+![User Roles and Use Cases](templates/../_templates/docs/images/self_service_list_menu.png)
 
 ## GIFT Data, Analytics and Visualization Platform Features - Self Assessment
 
@@ -313,7 +325,7 @@ These projects contain over 50 reports that are in the process of onboarding to 
 
 ### Set up Databricks Cloud Hosting Environment
 
-#### Option 1:  Sign up for Full-Service Cloud Hosting Provider 
+#### Option 1:  Sign up for Full-Service Cloud Hosting Provider
 - 1a. [Amazon Web Services-AWS](https://aws.amazon.com/)
 - 1b. [Azure](https://azure.microsoft.com/)
 - 1c. [Google Cloud](https://cloud.google.com/)
@@ -330,21 +342,21 @@ These projects contain over 50 reports that are in the process of onboarding to 
 
 1.  Once you launch the Databricks workspace, on the left-hand navigation panel, click 'Clusters'.
 2.  From here, click 'Create Cluster'.
-3.  Create cluster: 
+3.  Create cluster:
     There are two main types of clusters in Databricks:
     - Interactive: An interactive cluster is a cluster you manually create through the cluster UI, and is typically shared by multiple users across multiple notebooks.
-    - Job: A job cluster is an ephemeral cluster that is tied to a Databricks Job. It spins up and then back down automatically when the job is being run. 
+    - Job: A job cluster is an ephemeral cluster that is tied to a Databricks Job. It spins up and then back down automatically when the job is being run.
     For our project development we will use Interact.
-4. Name your cluster.  
+4. Name your cluster.
     - Our current naming standard is root_project_id_project_id_adbcluster_environment
     - example:  gift_ehr_adbcluster_dev
 5. Choose your cluster mode if not in community edition.
     There are two options for cluster mode:
-    - Standard: Single user / small group clusters - can use any language.  
+    - Standard: Single user / small group clusters - can use any language.
     - High Concurrency: A cluster built for minimizing latency in high concurrency workloads.
     For our project development we will use Standard.
-    
-### Generate a GitHub Access Token (PAT) 
+
+### Generate a GitHub Access Token (PAT)
 
 In GitHub, follow these steps to create a personal access token that allows access to your repositories:
 1. In the upper-right corner of any page, click your profile photo, then click Settings.
@@ -359,7 +371,7 @@ See the GitHub [documentation](https://docs.github.com/en/authentication/keeping
 
 ### Configure Git in Dataricks: Premium Option:  Save your Access Token to Databricks
 In Databricks,
-1. Click User Settings Icon Settings at the lower left of your screen 
+1. Click User Settings Icon Settings at the lower left of your screen
 2. Click User Settings.
 3. Click the Git Integration tab. If you have previously entered credentials, click the Change settings button.
 4. In the Git provider drop-down, select GitHub.
@@ -795,3 +807,4 @@ Please refer to [CDC's Template Repository](https://github.com/CDCgov/template)
 for more information about [contributing to this repository](https://github.com/CDCgov/template/blob/master/CONTRIBUTING.md),
 [public domain notices and disclaimers](https://github.com/CDCgov/template/blob/master/DISCLAIMER.md),
 and [code of conduct](https://github.com/CDCgov/template/blob/master/code-of-conduct.md).
+
