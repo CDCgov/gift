@@ -15,6 +15,7 @@ The templates use an architecture designed to be self service, data driven, even
 
 The feature list may seem overwhelming.  The following chart highlights the use cases that are applicable to the different roles.  An individual may wear multiple hats and perform different roles.  All items in green can be performed with no procedural programming and are designed for self-service BI in the delta lake "self-service storefront".  Items in the red part of the flow are designed to be performed in the delta lake "developer kitchen" by trained IT professionals.
 
+
 ![User Roles and Use Cases](templates/../_templates/docs/images/user_roles_and_use_cases.png)
 
 The self service lists are maintained by updating data stored in lists that are maintained in SharePoint, Google Sheets or a similar tool that synchs the data with csv files stored in Azure Storage upon update.
@@ -326,14 +327,8 @@ These projects contain over 50 reports that are in the process of onboarding to 
 
 ### Set up Databricks Cloud Hosting Environment
 
-=======
 #### Option 1:  Sign up for Full-Service Cloud Hosting Provider
->>>>>>> main
-=======
-#### Option 1:  Sign up for Full-Service Cloud Hosting Provider
->>>>>>> e97e49cf46417228fda5ad595b2d751d0d2a3efc
 
->>>>>>> main
 - 1a. [Amazon Web Services-AWS](https://aws.amazon.com/)
 - 1b. [Azure](https://azure.microsoft.com/)
 - 1c. [Google Cloud](https://cloud.google.com/)
@@ -350,7 +345,7 @@ These projects contain over 50 reports that are in the process of onboarding to 
 
 1.  Once you launch the Databricks workspace, on the left-hand navigation panel, click 'Clusters'.
 2.  From here, click 'Create Cluster'.
->>>>>>> main
+
 3.  Create cluster:
     There are two main types of clusters in Databricks:
     - Interactive: An interactive cluster is a cluster you manually create through the cluster UI, and is typically shared by multiple users across multiple notebooks.
