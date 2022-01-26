@@ -10,6 +10,7 @@ The templates use an architecture designed to be self service, data driven, even
 
 ![Delta-Lake-Multi-Hop-Architecture-Bronze](templates/../_templates/docs/images/bronze_to_gold_overview.png)
 
+
 ## GIFT Data, Analytics and Visualization User Roles and Use Cases
 
 The feature list may seem overwhelming.  The following chart highlights the use cases that are applicable to the different roles.  An individual may wear multiple hats and perform different roles.  All items in green can be performed with no procedural programming and are designed for self-service BI in the delta lake "self-service storefront".  Items in the red part of the flow are designed to be performed in the delta lake "developer kitchen" by trained IT professionals.
@@ -325,9 +326,14 @@ These projects contain over 50 reports that are in the process of onboarding to 
 
 ### Set up Databricks Cloud Hosting Environment
 
+=======
+#### Option 1:  Sign up for Full-Service Cloud Hosting Provider
+>>>>>>> main
+=======
 #### Option 1:  Sign up for Full-Service Cloud Hosting Provider
 >>>>>>> e97e49cf46417228fda5ad595b2d751d0d2a3efc
 
+>>>>>>> main
 - 1a. [Amazon Web Services-AWS](https://aws.amazon.com/)
 - 1b. [Azure](https://azure.microsoft.com/)
 - 1c. [Google Cloud](https://cloud.google.com/)
@@ -344,6 +350,7 @@ These projects contain over 50 reports that are in the process of onboarding to 
 
 1.  Once you launch the Databricks workspace, on the left-hand navigation panel, click 'Clusters'.
 2.  From here, click 'Create Cluster'.
+>>>>>>> main
 3.  Create cluster:
     There are two main types of clusters in Databricks:
     - Interactive: An interactive cluster is a cluster you manually create through the cluster UI, and is typically shared by multiple users across multiple notebooks.
@@ -355,6 +362,7 @@ These projects contain over 50 reports that are in the process of onboarding to 
     - example:  gift_ehr_adbcluster_dev
 5. Choose your cluster mode if not in community edition.
     There are two options for cluster mode:
+
 
     - Standard: Single user / small group clusters - can use any language.
     - High Concurrency: A cluster built for minimizing latency in high concurrency workloads.
@@ -378,9 +386,7 @@ See the GitHub [documentation](https://docs.github.com/en/authentication/keeping
 In Databricks,
 
 1. Click User Settings Icon Settings at the lower left of your screen
-
-
-1. Click User Settings Icon Settings at the lower left of your screen
+>>>>>>> main
 2. Click User Settings.
 3. Click the Git Integration tab. If you have previously entered credentials, click the Change settings button.
 4. In the Git provider drop-down, select GitHub.
@@ -816,4 +822,5 @@ Please refer to [CDC's Template Repository](https://github.com/CDCgov/template)
 for more information about [contributing to this repository](https://github.com/CDCgov/template/blob/master/CONTRIBUTING.md),
 [public domain notices and disclaimers](https://github.com/CDCgov/template/blob/master/DISCLAIMER.md),
 and [code of conduct](https://github.com/CDCgov/template/blob/master/code-of-conduct.md).
+
 
